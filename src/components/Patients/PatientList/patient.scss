@@ -30,7 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 15px 0 0;
+  padding: 20px 15px 0 0;
   cursor: pointer;
 
   .patientLeft{
@@ -50,4 +50,8 @@
       padding: 0;
     }
   }
+}
+
+.patientSelected{
+  background-color: $activestate_bg_2;
 }

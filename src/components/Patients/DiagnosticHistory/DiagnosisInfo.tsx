@@ -1,4 +1,4 @@
-const DiagnosisInfo = ({ logo, backgroundColor, key, value, response }) => {
+const DiagnosisInfo = ({ logo, backgroundColor, heading, value, response }) => {
   return (
     <div
       className="diagnosticInfo"
@@ -8,7 +8,7 @@ const DiagnosisInfo = ({ logo, backgroundColor, key, value, response }) => {
         <img src={logo} />
       </div>
       <div>
-        <p>{key}</p>
+        <p>{heading}</p>
         <h1>{value}</h1>
       </div>
       <div>{response}</div>

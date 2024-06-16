@@ -20,8 +20,7 @@ ChartJS.register(
   Legend
 );
 
-const LineChartComponent = ({patient}) => {
-  console.log(patient)
+const LineChartComponent = () => {
   const data = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [

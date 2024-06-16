@@ -16,7 +16,7 @@ const PatientView = () => {
   return (
     <div className="patientViewContainer">
       <div className="PatientListContainer">
-        <PatientList onPatientSelection={onPatientSelection}/>
+        <PatientList patientSelected={patient} onPatientSelection={onPatientSelection}/>
       </div>
       <div className="diaHistContainer">
         <DiagnosticHistory patient={patient}/>

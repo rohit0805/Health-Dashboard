@@ -6,7 +6,7 @@ import "./patient.scss";
 import { data } from "../util";
 import { searchLogo } from "../../../util";
 
-const PatientList = ({onPatientSelection}) => {
+const PatientList = ({ onPatientSelection, patientSelected }) => {
   const [patientList, setPatientList] = useState([]);
   const updatePatientList = async () => {
     //const newPatientList = await getService();
@@ -24,7 +24,22 @@ const PatientList = ({onPatientSelection}) => {
           <img src={searchLogo} />
         </header>
         {patientList.map((patient, index) => {
-          return <Patient key={index} {...patient} onPatientSelection={onPatientSelection}/>;
+          return (
+            <div
+              key={index}
+              className={`${
+                patient.phone_number === patientSelected?.phone_number
+                  ? "patientSelected"
+                  : ""
+              }`}
+            >
+              <Patient
+                key={index}
+                {...patient}
+                onPatientSelection={onPatientSelection}
+              />
+            </div>
+          );
         })}
       </div>
     </Container>

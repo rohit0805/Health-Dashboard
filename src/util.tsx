@@ -10,6 +10,11 @@ const searchLogo = `${iconPath}search_FILL0_wght300_GRAD0_opsz24.svg`;
 const heartLogo = `${iconPath}HeartBPM.svg`;
 const tempLogo = `${iconPath}temperature.svg`;
 const respLogo = `${iconPath}respiratory_rate.svg`;
+const scheduleLogo = `${iconPath}calendar_today_FILL0_wght300_GRAD0_opsz24.svg`;
+const genderLogo = `${iconPath}FemaleIcon.svg`;
+const callLogo = `${iconPath}PhoneIcon.svg`;
+const insuranceIcon = `${iconPath}InsuranceIcon.svg`;
+const downloadIcon = `${iconPath}download_FILL0_wght300_GRAD0_opsz24(1).svg`
 
 const navbarActionList: INavbarAction[] = [
   {
@@ -49,5 +54,10 @@ export {
   searchLogo,
   heartLogo,
   tempLogo,
-  respLogo
+  respLogo,
+  scheduleLogo,
+  genderLogo,
+  callLogo,
+  insuranceIcon,
+  downloadIcon
 };

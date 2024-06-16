@@ -22,7 +22,7 @@ const PatientView = () => {
         <DiagnosticHistory patient={patient}/>
       </div>
       <div className="patientInfoContainer">
-        <PatientInfo />
+        <PatientInfo/>
       </div>
     </div>
   );

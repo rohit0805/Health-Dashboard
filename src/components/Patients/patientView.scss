@@ -1,5 +1,67 @@
+@import "../../index.scss";
+
 .patientViewContainer{
   display: grid;
   grid-template-columns: 2fr 5fr 2fr;
   grid-gap: 30px;
+}
+
+.patientInfoContainer{
+  .patientAvatarContainer{
+    img{
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .patientBioContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    .patientBio{
+      display: flex;
+      padding: 5px 0;
+      margin: 10px 0;
+      img{
+        cursor: pointer;
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+      p{
+        margin: 0;
+        padding: 0;
+      }
+      h5{
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.patientInfoBtn{
+  background-color: $activestate_bg_1;
+  padding: 10px 40px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: $font-weight-bold;
+}
+
+.labResult{
+  margin-top: 40px;
+}
+
+.labResultList div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

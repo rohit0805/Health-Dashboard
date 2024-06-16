@@ -34,3 +34,18 @@ $line-spacing-19: 19px;
 $line-spacing-24: 24px;
 $line-spacing-33: 33px;
 $text-transform-titlecase: titlecase;
+
+
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track{
+ background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: $color-072635;
+}

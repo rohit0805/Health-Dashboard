@@ -1,5 +1,5 @@
 import React from "react";
-import { loginUserLogo, settingLogo, verticalLogo } from "./navbarUtil";
+import { loginUserLogo, settingLogo, verticalLogo } from "../../util";
 
 const Profile = () => {
   return (

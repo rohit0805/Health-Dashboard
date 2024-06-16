@@ -1,0 +1,53 @@
+@import "../../../index.scss";
+
+.patientListContainer{
+  height: calc(100vh - 150px);
+  overflow-y: scroll;
+  position: relative;
+
+  .patientHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: $color-ffffff;
+
+    h2{
+      font-size: $font-size-18;
+    }
+    img{
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+  }
+}
+
+.patientContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 15px 0 0;
+  cursor: pointer;
+
+  .patientLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    p,h5{
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

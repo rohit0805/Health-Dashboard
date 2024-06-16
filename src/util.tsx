@@ -5,6 +5,8 @@ const logo = `${iconPath}TestLogo.svg`;
 const loginUserLogo = `${userPath}small/doctor.png`;
 const settingLogo = `${iconPath}settings_FILL0_wght300_GRAD0_opsz24.svg`;
 const verticalLogo = `${iconPath}more_vert_FILL0_wght300_GRAD0_opsz24.svg`;
+const horizontalLogo = `${iconPath}more_horiz_FILL0_wght300_GRAD0_opsz24.svg`;
+const SearchLogo = `${iconPath}search_FILL0_wght300_GRAD0_opsz24.svg`;
 
 const navbarActionList: INavbarAction[] = [
   {
@@ -34,4 +36,12 @@ const navbarActionList: INavbarAction[] = [
   },
 ];
 
-export { logo, navbarActionList, loginUserLogo, settingLogo, verticalLogo };
+export {
+  logo,
+  navbarActionList,
+  loginUserLogo,
+  settingLogo,
+  verticalLogo,
+  horizontalLogo,
+  SearchLogo
+};

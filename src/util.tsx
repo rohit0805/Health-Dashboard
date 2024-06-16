@@ -6,7 +6,10 @@ const loginUserLogo = `${userPath}small/doctor.png`;
 const settingLogo = `${iconPath}settings_FILL0_wght300_GRAD0_opsz24.svg`;
 const verticalLogo = `${iconPath}more_vert_FILL0_wght300_GRAD0_opsz24.svg`;
 const horizontalLogo = `${iconPath}more_horiz_FILL0_wght300_GRAD0_opsz24.svg`;
-const SearchLogo = `${iconPath}search_FILL0_wght300_GRAD0_opsz24.svg`;
+const searchLogo = `${iconPath}search_FILL0_wght300_GRAD0_opsz24.svg`;
+const heartLogo = `${iconPath}HeartBPM.svg`;
+const tempLogo = `${iconPath}temperature.svg`;
+const respLogo = `${iconPath}respiratory_rate.svg`;
 
 const navbarActionList: INavbarAction[] = [
   {
@@ -43,5 +46,8 @@ export {
   settingLogo,
   verticalLogo,
   horizontalLogo,
-  SearchLogo
+  searchLogo,
+  heartLogo,
+  tempLogo,
+  respLogo
 };

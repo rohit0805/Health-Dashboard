@@ -1,0 +1,28 @@
+@import "../../../index.scss";
+
+.diagHistContainer{
+  height: calc(100vh - 150px);
+  overflow-y: scroll;
+  h2{
+    font-size: $font-size-18;
+  }  
+}
+
+.chartContainer{
+  height: 300px;
+  max-width: 800px;
+  margin: 20px; 
+  background-color: $color-f4f0fe;
+}
+
+.diagnosticInfoContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.diagnosticInfo{
+  width: 100%;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 10px;
+}

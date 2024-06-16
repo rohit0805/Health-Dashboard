@@ -1,11 +1,15 @@
 import React from "react";
 import { SearchLogo, horizontalLogo } from "../../../util";
 
-const Patient = (props) => {
-  console.log(props);
+const Patient = ({ onPatientSelection, ...props }) => {
   const { name, profile_picture, gender, age } = props;
   return (
-    <div className="patientContainer">
+    <div
+      className="patientContainer"
+      onClick={() => {
+        onPatientSelection(props);
+      }}
+    >
       <div className="patientLeft">
         <img src={profile_picture} />
         <div className="patientDetail">

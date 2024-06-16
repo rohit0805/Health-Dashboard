@@ -1,19 +1,25 @@
-import React from "react";
-import Navbar from "../navbar/Navbar";
 import PatientList from "./PatientList/PatientList";
 import DiagnosticHistory from "./DiagnosticHistory/DiagnosticHistory";
 import PatientInfo from "./PatientInfo/PatientInfo";
 
 import "./patientView.scss";
+import { useState } from "react";
 
 const PatientView = () => {
+  const [patient, setPatient] = useState(null);
+
+  const onPatientSelection = (patient)=>{
+    console.log(patient);
+    setPatient(patient);
+  }
+
   return (
     <div className="patientViewContainer">
       <div className="PatientListContainer">
-        <PatientList />
+        <PatientList onPatientSelection={onPatientSelection}/>
       </div>
       <div className="diaHistContainer">
-        <DiagnosticHistory />
+        <DiagnosticHistory patient={patient}/>
       </div>
       <div className="patientInfoContainer">
         <PatientInfo />

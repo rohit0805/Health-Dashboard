@@ -1,0 +1,16 @@
+@import "./index.scss";
+
+body{
+  background-color: $bg-color-f6F7f8;
+  box-sizing: border-box;
+  font-family: $font-family-manrope;
+  color: $color-072635;
+  font-size: $font-size-14;
+  line-height: $line-spacing-19;
+}
+
+.appContainer{
+  .navbarContainer{
+    margin-bottom: 32px;
+  }
+}
